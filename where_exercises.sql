@@ -1,8 +1,8 @@
 USE employees;
 
-select first_name from employees where first_name = 'Irena'
-OR first_name = 'Vidya' OR first_name = 'Maya'
-                               AND (gender = 'M')
+select first_name from employees where (first_name = 'Irena'
+OR first_name = 'Vidya' OR first_name = 'Maya')
+                               AND gender = 'M';
 ;
 
 select last_name from employees where last_name like 'E%';
